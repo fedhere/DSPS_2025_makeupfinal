@@ -15,12 +15,22 @@ Make sure you are making Dr. Bianco **Editor**
 
 <img width="367" height="107" alt="Screenshot 2025-12-10 at 11 55 44 PM" src="https://github.com/user-attachments/assets/2a488a5a-fd76-4ad6-9aa9-45229d29bdac" />
 
-## The assignent
+## The assignment
+
+<img width="240" height="240" alt="image" src="https://github.com/user-attachments/assets/4706435e-b99c-4340-b0da-c72cbbc221e9" />
+
+This challenge aims to predict interactions between atoms and it is based on a competition issued by the CHemistry and Mathematics in Phase Space (CHAMPS) lab. 
+
+YOu are asked to predict the magnetic interaction between two atoms in a molecule, described as the scalar coupling constant, or the strength of the magnetic interactions between a pair of atoms. This quantity can be predicted accuratly using density functional theory (DFT), but this process has high computational costs.
+
+Here you will attempt to predict the scalar coupling constant with machine learning. 
 
 You are to predict the coupling constant between two atoms given the two atom types (e.g., C and H), the coupling type (e.g., 2JHC), and any features you are able to create from the molecule structure (xyz) files.
 
-you will use the data stored in train.csv
+Use the data stored in train.csv
 
 **train.csv** - the training set, where the first column (molecule_name) is the name of the molecule where the coupling constant originates (the corresponding XYZ file is located at ./structures/.xyz), the second (atom_index_0) and third column (atom_index_1) is the atom indices of the atom-pair creating the coupling and the fourth column (scalar_coupling_constant) is the scalar coupling constant that we want to be able to predict
 
-**structures.csv** -- containing molecular structure (xyz) files, where the first line is the number of atoms in the molecule, followed by a blank line, and then a line for every atom, where the first column contains the atomic element (H for hydrogen, C for carbon etc.) and the remaining columns contain the X, Y and Z cartesian coordinates (a standard format for chemists and molecular visualization programs)
+**structures.csv** --  molecular structure (xyz) file, where the first line is the number of atoms in the molecule, followed by a blank line, and then a line for every atom, where the first column contains the atomic element (H for hydrogen, C for carbon etc.) and the remaining columns contain the X, Y and Z cartesian coordinates (a standard format for chemists and molecular visualization programs)
+
+
